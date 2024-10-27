@@ -1,0 +1,431 @@
+/*Style for homepage*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+
+:root{
+    --primary-color: #E0FFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+body{
+    font-family: 'Arima', sans-serif;
+    background-color:   #bbb6b2;
+    color: black;
+    line-height: 1.6;
+}
+
+.search-bar-container{
+    display: flex;
+    border: 1px solid rgb(158, 150, 150);
+    background-color: #ebe6e6;
+    width: 35%;
+    height: 75%;
+    border-radius: 5px;
+    padding: 5px 15px; 
+    color: black;  
+}
+
+  input {
+    background-color:  #ebe6e6;
+    width: 100%;
+    height: 50%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 15px 15px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bolder;
+
+}   
+
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+
+}
+
+nav ul li a:visited{
+    color: black;
+}
+
+nav ul li a:hover{
+    color: forestgreen;
+}
+
+nav ul li a:active{
+    color: black;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 2px;
+    background-color: rgb(114, 129, 158);
+    color: black;
+}
+
+.image{
+    background-image: url(./Assets/jess-bailey-q10VITrVYUM-unsplash.jpg);
+    background-size: cover;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0%;
+    padding: 6px;
+}
+
+@keyframes example {
+    from {background-color: rgb(134, 134, 92)};
+    to {background-color: rgb(190, 148, 57)};
+}
+     
+.image h1, h2{
+    padding: 5px 20px;
+    background-color: rgb(223, 219, 219);
+    animation-name: example;
+    animation-duration: 20s;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+
+.grid{
+    padding: 15px;
+    border-radius: 8px;
+    padding-top: 30px;
+
+}
+
+.card{
+    display: flex;
+    background-color: rgb(236, 236, 221);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    justify-self: center;
+    margin: 35px 10%;
+    height: 200px;
+    width: 60%;
+}
+
+.card:hover{
+    transform: translate(0, -5px);
+}
+
+.Admin{
+    padding: 5px 20px;
+}
+
+.icon{
+    display: flex;
+    padding: 25px 5px;
+}
+
+.heading, .comments{
+    padding: 0px 20px;
+}
+
+.heading ul li{
+        list-style: none;
+        margin-right: 10px;
+        display: inline;
+        font-size: 20px;
+}
+    
+.heading ul li a{
+        text-decoration: none;
+}
+
+.heading ul li a:hover{
+    color: forestgreen;
+}
+    
+.heading{
+        font-size: 15px;
+}
+
+.footer{
+    color: black;
+    display: flex;
+    height: 100%;
+    overflow-x:auto;
+    overflow-y: hidden;   
+}
+
+
+.action{
+    background-color: rgb(114, 129, 158);
+    font-size: 20px;
+    width: 100%;
+    padding: 30px;
+}
+
+.action h3{
+    justify-self: center;
+    font-size: 30px;
+}
+
+.connect p{
+    justify-self: center;
+    font-size: 25px;
+}
+
+
+.intro{
+    display: flex;
+    justify-self: center;
+    height: 200px;
+    padding-top: 100px;
+}
+
+.intro h3{
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.Writer  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.Writer p{
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0 5px;
+    justify-content: space-between;
+    
+}
+
+.connect{
+    padding: 30px;
+}
+
+span{
+    padding: 5px;
+    color: black;
+}
+
+.socials{
+    justify-self: center;
+}
+
+span a:visited{
+    color: black;
+}
+
+span a:hover{
+    color: coral;
+}
+
+span a:active{
+    color: black;
+}
+
+h3 a:visited{
+    color: black;
+}
+
+h3 a:hover{
+    color: coral;
+}
+
+h3 a:active{
+    color: black;
+}
+
+button{
+    display: block;
+    margin: auto;
+    height: 60px;
+    width: 200px;
+    color: cornflowerblue;
+    background: linear-gradient(-60deg, rgb(221, 200, 221), #d3d3df 50%);
+    padding: 10px;
+    font-size: 25px;
+    border: solid thin #9f9f9f;
+    border-radius: 10px;
+    cursor: pointer;       
+}
+
+button:hover{
+    transform: translate(0, -5px);
+}
+
+/*Media queries for homepage*/
+/* Media queries (for media responsiveness for phones, ipads and laptops view) */
+@media (max-width: 600px) {
+    header .search-bar-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+header{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    display: inline;
+    padding: 2px 5px;
+    
+    }
+        
+    .search-bar-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 5px 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .image {
+        height: 800px;
+        padding: 10px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 90%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        text-align: center;
+
+    }
+
+    .intro .action {
+        width: 100%;
+    }
+
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search-bar-container {
+        width: 40%;
+        height: 80%;
+        padding: 0 20px;
+    }
+
+    .image {
+        height: 500px;
+        padding: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .intro{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .Writer img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    header .search-bar-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+   
+    .search-bar-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+   
+     }
+
+    .card {
+        height: 350px;
+        width: 90%;
+    }
+  
+    .Writer img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  
+    }
+
+    .Writer img {
+        width: 50px;
+        height: 50px;
+    }
+}
