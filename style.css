@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "Arima";
+    src: url("./assets/fonts/Arima-VariableFont_wght.ttf");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul[role='list'], ol[role='list'] {
+  list-style: none;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+/* css reset end */
+}
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: "Arima";
+}
+p {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+ol, ul li {
+  font-size: 1.1rem;
+  padding: 0.5rem 0 0.1rem 0;
+} 
+.search-bar-container{
+  display: flex;
+  border: 1px solid rgb(158, 150, 150);
+  background-color: #ebe6e6;
+  width: 35%;
+  height: 75%;
+  border-radius: 5px;
+  padding: 5px 15px; 
+  color: black;  
+}
+
+input {
+  background-color:  #ebe6e6;
+  width: 100%;
+  height: 50%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 15px 15px;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bolder;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bolder;
+
+}   
+
+nav ul li{
+  list-style: none;
+  margin-right: 20px;
+  display: inline;
+}
+
+nav ul li a{
+  text-decoration: none;
+
+}
+
+nav ul li a:visited{
+  color: black;
+}
+
+nav ul li a:hover{
+  color: forestgreen;
+}
+nav ul li a:active{
+  color: black;
+}
+
+header{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 5px;
+  background-color: rgb(114, 129, 158);
+  color: black;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+}
+.admin-blog{
+  padding: 1.2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+section {
+  width: 80%;
+}
+.heading-message h1{
+  padding: 0.3rem 0 1rem 0.2rem;
+}
+.heading-message p {
+  padding-bottom: 2rem;
+}
+h2 {
+  padding: 0.5rem 0;
+}
+.image {
+  width: 100%;
+  height: 31rem;   
+}
+.social-icons {
+  padding: 1rem 0;
+  display: flex;
+  gap: 2em;
+  border-top: 2px solid lightblue;
+  border-bottom: 2px solid lightblue;
+}
+.py-2 {
+  margin-bottom: 1rem;
+}
+textarea {
+  width: 100%;
+  padding: 1rem 0 0 1rem;
+}
+.comment-section {
+  margin: 1rem 0;
+}
+
+.footer{
+  color: black;
+  display: flex;
+  height: 100%;
+  overflow-x:auto;
+  overflow-y: hidden;   
+}
+
+
+.action{
+  background-color: rgb(114, 129, 158);
+  font-size: 20px;
+  width: 100%;
+  padding: 30px;
+}
+
+.action h3{
+  justify-self: center;
+  font-size: 30px;
+}
+.connect p{
+  justify-self: center;
+  font-size: 25px;
+}
+
+.intro{
+  background-color:   #bbb6b2; 
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.Writer  img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  
+}
+.Writer p{
+  font-size: 10px;
+  
+}
+
+.connect{
+  padding: 30px;
+}
+
+span{
+  padding: 5px;
+  color: black;
+}
+
+.socials{
+  justify-self: center;
+}
+
+span a:visited{
+  color: black;
+}
+
+span a:hover{
+  color: cornflowerblue;
+}
+span a:active{
+  color: black;
+}
+
+h3 a:visited{
+  color: black;
+}
+
+h3 a:hover{
+  color: coral;
+}
+
+h3 a:active{
+  color: black;
+}
+
+/* Credits */
+#credit {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  border-top: 2px solid #e0e0e0;
+  position: relative;
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  animation: scroll-left 20s linear infinite;
+}
+.authors, .tutors {
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.authors {
+  color: red; 
+}
+.w3b-logo {
+  max-width: 100px;
+  margin-left: 20px;
+}
+
+/* Keyframe for scrolling effect */
+@keyframes scroll-left {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
